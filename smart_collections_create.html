@@ -1,6 +1,276 @@
 <!doctype html>
 <head>
-	  <link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/foundation.css">
+
+
+	<script src="js/vendor/custom.modernizr.js"></script>
+
+
+
+
 </head>
 <body>
+
+
+
+
+<nav class="top-bar" data-options="is_hover:false">
+  <ul class="title-area">
+    <!-- Title Area -->
+    <li class="name">
+      <h1><a href="#">Top Bar Title </a></h1>
+    </li>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li class="divider"></li>
+      <li class="active"><a href="#">Main Item 1</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Main Item 2</a></li>
+      <li class="divider"></li>
+      <li class="has-dropdown"><a href="#">Main Item 3</a>
+
+        <ul class="dropdown">
+          <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
+
+            <ul class="dropdown">
+              <li><label>Dropdown Level 2 Label</label></li>
+              <li><a href="#">Dropdown Level 2a</a></li>
+              <li><a href="#">Dropdown Level 2b</a></li>
+              <li class="has-dropdown"><a href="#">Dropdown Level 2c</a>
+
+                <ul class="dropdown">
+                  <li><label>Dropdown Level 3 Label</label></li>
+                  <li><a href="#">Dropdown Level 3a</a></li>
+                  <li><a href="#">Dropdown Level 3b</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Dropdown Level 3c</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown Level 2d</a></li>
+              <li><a href="#">Dropdown Level 2e</a></li>
+              <li><a href="#">Dropdown Level 2f</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Dropdown Level 1b</a></li>
+          <li><a href="#">Dropdown Level 1c</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Dropdown Level 1d</a></li>
+          <li><a href="#">Dropdown Level 1e</a></li>
+          <li><a href="#">Dropdown Level 1f</a></li>
+          <li class="divider"></li>
+          <li><a href="#">See all &rarr;</a></li>
+        </ul>
+      </li>
+      <li class="divider"></li>
+    </ul>
+
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="divider hide-for-small"></li>
+      <li class="has-dropdown"><a href="#">Main Item 4</a>
+
+        <ul class="dropdown">
+          <li><label>Dropdown Level 1 Label</label></li>
+          <li class="has-dropdown"><a href="#" class="">Dropdown Level 1a</a>
+
+            <ul class="dropdown">
+              <li><a href="#">Dropdown Level 2a</a></li>
+              <li><a href="#">Dropdown Level 2b</a></li>
+              <li class="has-dropdown"><a href="#">Dropdown Level 2c</a>
+
+                <ul class="dropdown">
+                  <li><a href="#">Dropdown Level 3a</a></li>
+                  <li><a href="#">Dropdown Level 3b</a></li>
+                  <li><a href="#">Dropdown Level 3c</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown Level 2d</a></li>
+              <li><a href="#">Dropdown Level 2e</a></li>
+              <li><a href="#">Dropdown Level 2f</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Dropdown Level 1b</a></li>
+          <li><a href="#">Dropdown Level 1c</a></li>
+          <li class="divider"></li>
+          <li><label>Dropdown Level 1 Label</label></li>
+          <li><a href="#">Dropdown Level 1d</a></li>
+          <li><a href="#">Dropdown Level 1e</a></li>
+          <li><a href="#">Dropdown Level 1f</a></li>
+          <li class="divider"></li>
+          <li><a href="#">See all &rarr;</a></li>
+        </ul>
+      </li>
+      <li class="divider"></li>
+      <li class="has-form">
+        <form>
+          <div class="row collapse">
+            <div class="small-8 columns">
+              <input type="text">
+            </div>
+            <div class="small-4 columns">
+              <a href="#" class="alert button">Search</a>
+            </div>
+          </div>
+        </form>
+      </li>
+      <li class="divider show-for-small"></li>
+      <li class="has-form">
+        <a class="button" href="#">Button!</a>
+      </li>
+    </ul>
+  </section>
+</nav>
+
+<br>
+<br>
+
+<form>
+  <div class="row">
+  	<div class="large-12 columns">
+  		<h4>Create Collection</h4><br>
+  	</div>
+  <div class="row">  	
+    <div class="small-12">
+        <div class="row">
+ 		   	<div class="small-2 columns">
+         		<label for="right-label" class="right">Collection Title</label>
+        	</div>
+        	<div class="small-10 columns">
+          		<input type="text" name="collection_title" id="right-label" placeholder="Collection Title">
+       	    </div>
+        </div>
+        <br>
+        <div class="row">
+ 		   	<div class="small-2 columns">
+         		<label for="right-label" class="right">Description</label>
+        	</div>
+        	<div class="small-10 columns">
+          		<input type="text" name="collection_descr" id="right-label" placeholder="Collection Description">
+       	    </div>
+        </div>
+        <br>
+        <div class="row">
+ 		   	<div class="small-2 columns">
+         		<label for="right-label" class="right">Collection Image</label>
+        	</div>
+        	<div class="small-10 columns">
+          		<input type="file" name="collection_image" id="right-label" placeholder="Inline Text Input">
+       	    </div>
+        </div>
+        <br>
+        <div class="row">
+ 		   	<div class="small-2 columns">
+         		<label for="right-label" class="right">Product Order</label>
+        	</div>
+   			<div class="small-2 columns">
+          		<select class="" name="product_order" id="right-label">
+					<option value="alpha-asc" selected="selected">Alphabetically: A-Z</option>
+					<option value="alpha-desc">Alphabetically: Z-A</option>
+					<option value="best-selling">By Best Selling</option>
+					<option value="created-desc">By Created Date: Newest to Oldest</option>
+					<option value="created">By Created Date: Oldest to Newest</option>
+					<option value="price-desc">By Price: Highest to Lowest</option>
+					<option value="price-asc">By Price: Lowest to Highest</option>
+				</select>
+       	    </div>
+       	    <div class="small-8 columns">
+       	    </div>
+        </div>
+        <br>
+        <div class="row">
+ 		   	<div class="small-2 columns">
+         		<label for="right-label" class="right">Set Your Conditions</label>
+        	</div>
+        	<!--
+        	<div>
+        		<input name="Rule[0][id]" id="Rule_0_id" type="hidden">
+        	</div>
+        	-->	
+        	<div class="small-3 columns">
+				<select class="" name="rule_condition" id="Rule_0_column">
+					<option value="1">Product created</option>
+					<option value="2">Product updated</option>
+					<option value="3">Product published</option>
+					<option value="4">Product sold in last month</option>
+					<option value="5">Product sold in last 21 days</option>
+					<option value="6">Product sold in last 14 days</option>
+					<option value="7">Product sold in last 7 days</option>
+					<option value="8">Product discount rate (X% off)</option>
+					<option value="9">Product title</option>
+					<option value="10">Product type</option>
+					<option value="11">Product vendor</option>
+					<option value="12">Product price</option>
+					<option value="13">Product tag</option>
+					<option value="14">Compare at price</option>
+					<option value="15">Weight (grams)</option>
+					<option value="16">Inventory stock</option>
+					<option value="17">Variant's title</option>
+				</select>											
+       	    </div>
+        	<div class="small-2 columns">
+          		<select class="" name="rule_operater" id="Rule_0_relation">
+					<option value="1">within X days</option>
+					<option value="2">X days before</option>
+					<option value="3">after a specific date</option>
+					<option value="4">before a specific date</option>
+					<option value="5">is equal to</option>
+					<option value="6" disabled="disabled">is greater than</option>
+					<option value="7" disabled="disabled">is less than</option>
+					<option value="8" disabled="disabled">starts with</option>
+					<option value="9" disabled="disabled">ends with</option>
+					<option value="10" disabled="disabled">contains</option>
+				</select>											
+       	    </div>
+       	    <div class="small-2 columns">
+          		<input class"" name="rule_value" id="Rule_0_condition" type="text" placeholder="Set Value" maxlength="255">
+       	    </div>
+       	    <div class="small-3 columns">
+       	    	<a href="#" class="add">Add</a>
+				<a href="#" class="remove">Remove</a>
+        	</div>
+ 		</div>
+ 		<br>
+ 		<div class="row">
+ 		   	<div class="small-2 columns">
+         		<label for="right-label" class="right"></label>
+        	</div>
+        	<div class="small-2 columns">
+          		<a href="#" class="small button">Create Collection</a>
+       	    </div>
+       	    <div class="small-8 columns">
+          		<a href="#" class="small button">Cancel</a>
+       	    </div>
+        </div>
+    </div>
+  </div>
+</form>
+
+
+
+
+
+
+
+
+<!-- Adding Javascript -->
+	<script>
+	document.write('<script src=js/vendor/'
+	+ ('__proto__' in {} ? 'zepto' : 'jquery')
+	+ '.js><\/script>');
+	</script>
+
+	<script src="js/foundation/foundation.js"></script>
+	<script src="js/foundation/foundation.topbar.js"></script>
+	<script src="js/foundation/foundation.dropdown.js"></script>
+	<!-- Other JS plugins can be included here -->
+
+	<script>
+	$(document).foundation();
+	</script>
+
 </body>
